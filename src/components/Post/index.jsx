@@ -1,4 +1,6 @@
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
+
+import { Comment } from "../Comment";
 
 export const Post = () => {
   return (
@@ -34,7 +36,7 @@ export const Post = () => {
         </p>
 
         <p>
-          <a href="#">#novoprojeto</a> <a href="#">#nlw</a>{' '}
+          <a href="#">#novoprojeto</a> <a href="#">#nlw</a>{" "}
           <a href="#">#rocketseat</a>
         </p>
       </div>
@@ -48,6 +50,12 @@ export const Post = () => {
           <button type="submit">Publicar</button>
         </footer>
       </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
-  )
-}
+  );
+};
